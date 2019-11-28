@@ -1,0 +1,12 @@
+<div class="playfield">
+    <mat-grid-list cols="3" rowHeight="200px">
+        <ng-container *ngFor="let tiles of tilesArray; let i = index">
+            <mat-grid-tile *ngFor="let tile of tiles; let j = index" (click)="onItemClick(i, j)">
+                {{tile.text}}
+            </mat-grid-tile>
+        </ng-container>
+    </mat-grid-list>
+
+    <div>{{ currentStatus }}</div>
+    <button (click)="onReset()">Reset</button>
+</div>

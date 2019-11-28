@@ -1,0 +1,18 @@
+mat-grid-tile {
+    background: lightblue;
+    border-style: solid;
+  }
+
+  mat-grid-tile:hover {
+    background-color: rgb(255, 145, 0);
+    cursor: pointer;
+  }
+
+  mat-grid-list {
+      max-width: 500px;
+      padding-bottom: 30px;
+  }
+
+  .playfield {
+    margin: 30px;
+  }
